@@ -9,14 +9,14 @@ public class Main {
 
         Random random = new Random();
 
-        int [] tablica = {0,3,2,3,3,0,5,2,3};
+        int [] tablica = new int [20];
 
         int max = 0;
 
         // wypełniamy tablice losowymi liczbami i sprawdzamy max wartosc w tablicy
         // na tej podstawie ustalimy rozmiar tablicy count
         for (int i=0; i<tablica.length; i++) {
-            //tablica[i] = random.nextInt(10);
+            tablica[i] = random.nextInt(23);
             if (tablica[i] > max) max = tablica[i];
         }
         System.out.println("max = " + max);
@@ -41,6 +41,5 @@ public class Main {
             countBis[tablica[i-1]]--;
         }
         System.out.println(Arrays.toString(result));
-
     }
 }
